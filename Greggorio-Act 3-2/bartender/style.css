@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Nunito:wght@300;500;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* INDEX HTML */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html {
+  font-family: "Nunito";
+  font-size: 12px;
+}
+a{
+  font-family: "Nunito";
+  text-decoration: none;
+  color: black;
+}
+header{
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 999;
+}
+
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-image: url("./images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bold{
+  font-weight: bold;
+}
+.container-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.links a{
+  font-size: 25px;
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.brand {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgb(223, 223, 223);
+}
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+}
+form ion-icon {
+  width: 8%;
+  font-size: 3rem;
+  margin-bottom: -8px;
+  color: rgb(75, 75, 75);
+  display: inline-block;
+}
+.logo ion-icon {
+  color: rgb(75, 75, 75);
+  font-size: 300%;
+  padding-left: 100%;
+
+}
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-result .title {
+  color: black;
+  margin: 20px 10px 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.view-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px 5px;
+  background-color: #404041;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+.item-data {
+  color: black;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.bottom{
+  margin-bottom: 40px;
+}
+.container.initial .brand {
+  font-size: 7rem;
+}
+.container.initial form {
+  max-width: 800px;
+}
+.container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+/* Nutrient Section */
+.nutrition-facts {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-top: -150px;
+}
+
+
+
+
+.form-nutrition{
+  margin-top: -30px;
+}
+
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.fact-row span {
+  flex: 1;
+  display: block;
+  padding: 2px 0;
+}
+
+.fact-row span:first-child {
+  font-weight: bold;
+}
+
+.fact-row:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+.item.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.item.fade-in.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title{
+  color: black;
+  font-family: 'DM Serif Display', serif;
+}
+
+
+/* Footer */
+.footer-container{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.right-text{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #555; 
+  font-size: 14px; 
+  padding-right: 100px;
+}
+
+.legal-info,
+.help,
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; 
+  padding: 20px;
+  text-align: left;
+}
+.left-logo ion-icon {
+  color: rgb(75, 75, 75);
+  font-size: 900%;
+  padding-left: 100%;
+}
+
+.left-logo h1{
+  font-family: "Nunito";
+  margin: 0;
+}
+
+.left-logo{
+  display: flex;
+  align-items: center;
+}
+.logo-content {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* ABOUT US HTML */
+.about-us-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.first-row-team{
+  display: flex;
+}
+.second-row-team{
+  display: flex;
+}
+.gregg{
+  background-color: rgb(200, 191, 231);
+}
+.rye{
+  background-color: rgb(122,192,255);
+}
+.zev{
+  background-color: rgb(222,42,42);
+}
+.john{
+  background-color: rgb(234,148,194);
+}
+.brent{
+  background-color: rgb(101,163,160);
+}
+.kaizer{
+  background-color: rgb(255,223,111);
+}
+.image-card {
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+}
+
+.image-card-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 5px;
+  z-index: 3;
+  font-size: 60px;
+}
+
+
+#meet-the-team-initial{
+  text-align: center;
+  background-color: #F2F2F2;
+  }
+#meet-the-team-initial h1{
+  font-size: 40px;
+}
+#meet-the-team-initial p{
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .search-result {
+    grid-gap: 10px;
+  }
+  .container.initial .brand {
+    font-size: 4rem;
+  }
+  .container.initial form {
+    max-width: 500px;
+  }
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
+
+
+
+
+/* Nutrition page */
+
+.nutrition-a {
+  background-image: url(images/fresh-and-healthy-food-preparation-background-70r0z6odcelaesgm.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 50vh;
+  max-height: 250vh;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+}
+.brand2 {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 90px;
+  display: block;
+}
+.description{
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-nutrition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form1 {
+  width: 100%;
+  height: 80px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hide the spinner */
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: #996B36;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  clear: both;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="button"]:hover {
+  background-color: #E8A352;
+}
+
+
+
+.nutrition-result {
+  font-size: 50px; 
+  border: 1px solid transparent; 
+  border-radius: 5px; 
+  margin: 10px 0; 
+  width: 600px; 
+  margin: 0 auto; 
+  margin-top: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+ 
+}
+
+.nutrition.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
